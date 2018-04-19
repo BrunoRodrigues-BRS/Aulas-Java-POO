@@ -1,0 +1,24 @@
+package listaexercícios1;
+import java.util.Scanner;
+public class Comicao {
+    public static void main(String[] args) {
+        Scanner tec = new Scanner(System.in);
+        //receber os valores para o valculo //
+        System.out.println(" digio o salario fixo ");
+         double sf = tec.nextDouble();
+        System.out.println(" digio o valor das  vendas ");
+         double v = tec.nextDouble();
+         double cv = v* 0.03;
+         double sal = 0;
+         double v2 = 0;
+         //testa o valor da comiçao//
+        if (v <= 1500){
+           sal = (sf + cv );
+        System.out.println(" o saario com comicao " + sal ); }
+        else 
+          v2 = v - 1500;
+         sal = sf + cv + (v2*0.05);  
+          
+     System.out.println(" o saario com comicao " + sal );    
+    }
+}
